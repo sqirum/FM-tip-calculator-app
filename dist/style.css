@@ -511,3 +511,28 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.flex{
+  display: flex;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.bg-\[\#C5E4E7\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 228 231 / var(--tw-bg-opacity));
+}
