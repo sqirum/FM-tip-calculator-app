@@ -16,26 +16,50 @@
     <img src="../images/logo.svg" alt="logo">
   </header>
 
-  <main>
-    Bill
+  <main class="bg-white rounded-3xl p-8 flex flex-col">
+    <div class="flex flex-col">
+      <div>
+        <label for="bill">Bill</label>
+        <div class="relative mt-3">
+          <input type="number" name="bill" class="block bg-[#F3F9FA] rounded-md text-[#00474B] leading-9 px-4 py-1 w-full text-right">
+          <img src="../images/icon-dollar.svg" alt="dollar icon" class="absolute bottom-1/2 translate-y-1/2 translate-x-4 left-0">
+        </div>
+      </div>
 
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
+      <div class="mt-8">
+        <p>Select tip %</p>
+        <div class="flex flex-wrap gap-4 mt-3">
+          <input type="button" id="5" name="tip" placeholder="5%" value="5" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
+          <input type="button" id="10" name="tip" placeholder="10%" value="10" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
+          <input type="button" id="15" name="tip" placeholder="15%" value="15" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
+          <input type="button" id="25" name="tip" placeholder="25%" value="25" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
+          <input type="button" id="50" name="tip" placeholder="50%" value="50" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
+          <input type="number" id="custom" name="tip" placeholder="Custom" class="bg-[#F3F9FA] rounded-md text-[#00474B] flex-auto px-4 py-1 leading-9 w-2/5 text-right placeholder:text-[#547878]">
+        </div>
+      </div>
+
+      <div class="mt-8  ">
+        <label for="people">Number of people</label>
+        <div class="relative mt-3">
+          <input type="number" name="people" class="block bg-[#F3F9FA] rounded-md text-[#00474B] leading-9 px-4 py-1 w-full text-right">
+          <img src="../images/icon-dollar.svg" alt="dollar icon" class="absolute bottom-1/2 translate-y-1/2 translate-x-4 left-0">
+        </div>
+      </div>
+    </div>
+
+    <div class="outputs">
+
+      Tip Amount
+      / person
+    
+      Total
+      / person
+    
+      Reset
+
+    </div>
   
-    Number of People
-  
-    Tip Amount
-    / person
-  
-    Total
-    / person
-  
-    Reset
+
   </main>
 
 </body>
