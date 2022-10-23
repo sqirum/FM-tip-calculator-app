@@ -10,10 +10,10 @@
   <title>Frontend Mentor | Tip calculator app</title>
 
 </head>
-<body class="flex justify-center items-center h-screen bg-[#C5E4E7] flex-col">
+<body class="flex items-center h-screen bg-[#C5E4E7] flex-col">
 
   <header>
-    <img src="../images/logo.svg" alt="logo">
+    <img src="../images/logo.svg" alt="logo" class="m-12">
   </header>
 
   <main class="bg-white rounded-3xl p-8 flex flex-col">
@@ -21,7 +21,7 @@
       <div>
         <label for="bill">Bill</label>
         <div class="relative mt-3">
-          <input type="number" name="bill" class="block bg-[#F3F9FA] rounded-md text-[#00474B] leading-9 px-4 py-1 w-full text-right">
+          <input type="number" name="bill" class="block bg-[#F3F9FA] rounded-md text-[#00474B] leading-9 px-4 py-1 w-full text-right text-2xl">
           <img src="../images/icon-dollar.svg" alt="dollar icon" class="absolute bottom-1/2 translate-y-1/2 translate-x-4 left-0">
         </div>
       </div>
@@ -29,33 +29,47 @@
       <div class="mt-8">
         <p>Select tip %</p>
         <div class="flex flex-wrap gap-4 mt-3">
-          <input type="button" id="5" name="tip" placeholder="5%" value="5" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
-          <input type="button" id="10" name="tip" placeholder="10%" value="10" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
-          <input type="button" id="15" name="tip" placeholder="15%" value="15" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
-          <input type="button" id="25" name="tip" placeholder="25%" value="25" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
-          <input type="button" id="50" name="tip" placeholder="50%" value="50" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5">
-          <input type="number" id="custom" name="tip" placeholder="Custom" class="bg-[#F3F9FA] rounded-md text-[#00474B] flex-auto px-4 py-1 leading-9 w-2/5 text-right placeholder:text-[#547878]">
+          <input type="button" id="5" name="tip" placeholder="5%" value="5%" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5 text-2xl">
+          <input type="button" id="10" name="tip" placeholder="10%" value="10%" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5 text-2xl">
+          <input type="button" id="15" name="tip" placeholder="15%" value="15%" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5 text-2xl">
+          <input type="button" id="25" name="tip" placeholder="25%" value="25%" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5 text-2xl">
+          <input type="button" id="50" name="tip" placeholder="50%" value="50%" class="bg-[#00474B] rounded-md text-white flex-auto px-4 py-1 leading-9 w-2/5 text-2xl">
+          <input type="number" id="custom" name="tip" placeholder="Custom" class="bg-[#F3F9FA] rounded-md text-[#00474B] flex-auto px-4 py-1 leading-9 w-2/5 text-2xl text-right placeholder:text-[#547878]">
         </div>
       </div>
 
       <div class="mt-8  ">
         <label for="people">Number of people</label>
         <div class="relative mt-3">
-          <input type="number" name="people" class="block bg-[#F3F9FA] rounded-md text-[#00474B] leading-9 px-4 py-1 w-full text-right">
-          <img src="../images/icon-dollar.svg" alt="dollar icon" class="absolute bottom-1/2 translate-y-1/2 translate-x-4 left-0">
+          <input type="number" name="people" class="block bg-[#F3F9FA] rounded-md text-[#00474B] leading-9 px-4 py-1 w-full text-right text-2xl">
+          <img src="../images/icon-person.svg" alt="dollar icon" class="absolute bottom-1/2 translate-y-1/2 translate-x-4 left-0">
         </div>
       </div>
     </div>
 
-    <div class="outputs">
+    <div class="flex flex-col rounded-2xl bg-[#00474B] p-6 mt-8">
 
-      Tip Amount
-      / person
-    
-      Total
-      / person
-    
-      Reset
+      <div>
+        <div class="label">
+          Tip Amount
+          / person
+        </div>
+        <div class="result">
+          $4.27
+        </div>
+      </div>
+
+      <div>
+        <div class="label">
+          Total
+          / person
+        </div>
+        <div class="result">
+          $32.79
+        </div>
+      </div>
+
+      <input type="reset" value="Reset" class="w-full rounded-md bg-[#0D686D] text-[#00474B]">
 
     </div>
   
