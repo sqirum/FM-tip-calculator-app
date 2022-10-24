@@ -664,8 +664,17 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .leading-9{
   line-height: 2.25rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
 }
 
 .text-\[\#00474B\]{
@@ -676,6 +685,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#26C2AE\]{
+  --tw-text-opacity: 1;
+  color: rgb(38 194 174 / var(--tw-text-opacity));
 }
 
 .placeholder\:text-\[\#547878\]::-moz-placeholder{
