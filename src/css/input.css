@@ -10,6 +10,22 @@
     line-height: 1.5rem;
 }
 
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  .active {
+    background-color: #26C2AE;
+    color: #00474B;
+  }
+
+  .invalid {
+    border: 1px solid #E17457;
+  }
 
 @tailwind base;
 @tailwind components;
